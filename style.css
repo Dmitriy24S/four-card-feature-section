@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 15px;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+}
+header {
+  margin-bottom: 2rem;
+  width: 315px;
+  margin-top: 2rem;
+  text-align: center;
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: hsl(234, 12%, 34%);
+}
+.header__title span {
+  font-weight: 600;
+}
+.header__text {
+  margin-bottom: 2rem;
+  padding: 0 0.7rem;
+  color: hsl(229, 6%, 66%);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card::before {
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.supervisor::before {
+  background-color: hsl(180, 62%, 55%);
+}
+.team-builder::before {
+  background-color: hsl(0, 78%, 62%);
+}
+.karma::before {
+  background-color: hsl(34, 97%, 64%);
+}
+.calculator::before {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.card {
+  background-color: white;
+  margin-bottom: 1.5rem;
+  box-shadow: 0rem 1rem 1.1rem -0.5rem rgb(171 194 216 / 70%);
+  border-radius: 10px;
+  padding: 2rem 1.5em;
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.card__title {
+  color: hsl(234, 12%, 34%);
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.card__text {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 2.2rem;
+  font-size: 14px;
+}
+.card__img {
+  align-self: flex-end;
+  width: 55px;
+}
+footer {
+  margin-top: 1rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 1033px) {
+  header {
+    text-align: center;
+    width: 568px;
+  }
+  .header__title {
+    font-size: 34px;
+  }
+  section {
+    flex-direction: row;
+    gap: 25px;
+    margin: 0 2rem;
+  }
+  .card {
+    min-width: 315px;
+    width: auto;
+    max-width: 325px;
+  }
+}
